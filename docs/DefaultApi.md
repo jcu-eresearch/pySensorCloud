@@ -1,4 +1,4 @@
-# swagger_client.DefaultApi
+# sensor_cloud.DefaultApi
 
 All URIs are relative to *https://sensor-cloud.io/api/sensor/v2*
 
@@ -74,28 +74,28 @@ Calculate an aggregated view of observations. The aggregation is calculated on d
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 streamid = 'streamid_example' # str | Stream identifier
 start = 'start_example' # str | Start date (url encoded iso8601 format) (optional)
 end = 'end_example' # str | End date (url encoded iso8601 format) (optional)
@@ -151,28 +151,28 @@ Get shares for a collection
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 collectionid = 'collectionid_example' # str | 
 id = 'id_example' # str | Only return shares with this id or partial match using wildcards (*, ?).  \\n* matches zero or more characters.\\n* ? matches exactly one character.\\n\\nFor example, bo* will match any word starting with bo, such as bo, bom, body, and so on. On the other hand, bo? will only match three-letter words starting with bo, such as bo, bom, and so on. (optional)
 limit = 3.4 # float | Maximum number of shares to return (optional)
@@ -228,28 +228,28 @@ Delete a share from an existing collection. The client must have an appropriate 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 collectionid = 'collectionid_example' # str | 
 id = 'id_example' # str | The unique identifier for the share to be deleted from the collection
 
@@ -293,28 +293,28 @@ Get details about a specific share resource
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 collectionid = 'collectionid_example' # str | 
 id = 'id_example' # str | The unique identifier for the share to be deleted from the collection
 recursive = false # bool | Return full details of embedded resources (optional) (default to false)
@@ -358,28 +358,28 @@ Get a count of collections.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 limit = 3.4 # float | Maximum number of streams to return (optional)
 skip = 3.4 # float | Skip this many results. (optional)
 organisationid = 'organisationid_example' # str | filter response by this organisation id (optional)
@@ -432,28 +432,28 @@ Get a list of collections.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 limit = 3.4 # float | Maximum number of streams to return (optional)
 skip = 3.4 # float | Skip this many results. (optional)
 organisationid = 'organisationid_example' # str | filter response by this organisation id (optional)
@@ -508,28 +508,28 @@ Delete an existing Collection. The client must have an appropriate delete Collec
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
 
 try: 
@@ -569,28 +569,28 @@ Get details about a collection.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | Collection id
 recursive = true # bool | Return full details of embedded resources (optional)
 
@@ -634,30 +634,30 @@ Create or update a collection
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | The unique identifier for the target collection to create or update
-body = swagger_client.CollectionPut() # CollectionPut |  (optional)
+body = sensor_cloud.CollectionPut() # CollectionPut |  (optional)
 recursive = false # bool | Return full details of the created or updated collection (optional) (default to false)
 
 try: 
@@ -701,29 +701,29 @@ Create a new collection. Do not provide the id property in the body. The server 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-body = swagger_client.CollectionPost() # CollectionPost | 
+api_instance = sensor_cloud.DefaultApi()
+body = sensor_cloud.CollectionPost() # CollectionPost | 
 
 try: 
     # Create a new collection.
@@ -762,28 +762,28 @@ Get a collection of groups.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | Only return groups with this id or partial match using wildcards (*, ?).   * matches zero or more characters. * ? matches exactly one character.  For example, bo* will match any word starting with bo, such as bo, bom, body, and so on. On the other hand, bo? will only match three-letter words starting with bo, such as bo, bom, and so on. (optional)
 organisationid = 'organisationid_example' # str | filter response by this organisation id (optional)
 groupids = 'groupids_example' # str | filter response by a comma separated list of group ids (optional)
@@ -838,28 +838,28 @@ Delete an existing Group. The client must have an appropriate delete Group permi
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
 cascade = true # bool | Remove group even when not empty. (optional)
 
@@ -901,28 +901,28 @@ Get details about a group.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | Group id
 recursive = true # bool | Return full details of embedded resources (optional)
 
@@ -966,30 +966,30 @@ Create a new group. If a group with the posted 'id' already exists then it will 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
-body = swagger_client.GroupPost() # GroupPost | 
+body = sensor_cloud.GroupPost() # GroupPost | 
 
 try: 
     # Create a new or update an existing group.
@@ -1031,28 +1031,28 @@ Accepts an invitation.  Only the invited user can accept invitations.  Invitatio
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | The unique identifier for the target invitation
 
 try: 
@@ -1095,28 +1095,28 @@ Get details about an invitation. Only users who sent the invitation are permitte
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | The unique identifier for the target invitation
 recursive = false # bool | Return full details of embedded resources (optional) (default to false)
 
@@ -1161,29 +1161,29 @@ Send a new invitation.  Users must have the AssignRolePermission to be able to s
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-body = swagger_client.InvitationPost() # InvitationPost | Information about the invitation to be sent. (optional)
+api_instance = sensor_cloud.DefaultApi()
+body = sensor_cloud.InvitationPost() # InvitationPost | Information about the invitation to be sent. (optional)
 
 try: 
     # Send a new invitation
@@ -1223,28 +1223,28 @@ Get a count of locations.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | Only return locations with this id or partial match using wildcards (*, ?).   * matches zero or more characters. * ? matches exactly one character.  For example, bo* will match any word starting with bo, such as bo, bom, body, and so on. On the other hand, bo? will only match three-letter words starting with bo, such as bo, bom, and so on. (optional)
 description = 'description_example' # str | Only return locations with this description or partial match using wildcards (*, ?).   * matches zero or more characters. * ? matches exactly one character.  For example, bo* will match any word starting with bo, such as bo, bom, body, and so on. On the other hand, bo? will only match three-letter words starting with bo, such as bo, bom, and so on. (optional)
 limit = 3.4 # float | Limit the number of results. The limit is 1000 by default (optional)
@@ -1301,28 +1301,28 @@ Get a collection of locations.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | Only return locations with this id or partial match using wildcards (*, ?).   * matches zero or more characters. * ? matches exactly one character.  For example, bo* will match any word starting with bo, such as bo, bom, body, and so on. On the other hand, bo? will only match three-letter words starting with bo, such as bo, bom, and so on. (optional)
 description = 'description_example' # str | Only return locations with this description or partial match using wildcards (*, ?).   * matches zero or more characters. * ? matches exactly one character.  For example, bo* will match any word starting with bo, such as bo, bom, body, and so on. On the other hand, bo? will only match three-letter words starting with bo, such as bo, bom, and so on. (optional)
 limit = 3.4 # float | Limit the number of results. The limit is 1000 by default (optional)
@@ -1381,28 +1381,28 @@ Delete an existing Location. The client must have an appropriate delete Location
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
 cascade = true # bool | Remove Location even when is referenced by other objects (eg. Platform deployments or Streams). (optional)
 
@@ -1444,28 +1444,28 @@ Get details about a location.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | Location id
 recursive = true # bool | Return full details of embedded resources (optional)
 
@@ -1509,30 +1509,30 @@ Create a new Location. If a Location with the posted 'id' already exists then it
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
-body = swagger_client.LocationPost() # LocationPost | A `Location` describes a point with a known latitude and longitude (and, optionally, elevation above mean sea level).  The coordinates of the `Location` are specified using a [GeoJSON Point](http://geojson.org/geojson-spec.html#point) object, which by convention lists coordinates in the order longitude, latitude then elevation.  For example, the following snippet defines a `Location` located at 42.903 degrees South, 147.327 degrees East, and 25 metres above mean sea level:      {       \"id\": \"NewLocation\",       \"organisationid\": \"MyOrg\",       \"geoJson\": {         \"type\": \"Point\",         \"coordinates\": [147.327, -42.903, 25.0]       }     }  If elevation is unknown, pass only two values (the longitude and latitude) in the `coordinates` property.
+body = sensor_cloud.LocationPost() # LocationPost | A `Location` describes a point with a known latitude and longitude (and, optionally, elevation above mean sea level).  The coordinates of the `Location` are specified using a [GeoJSON Point](http://geojson.org/geojson-spec.html#point) object, which by convention lists coordinates in the order longitude, latitude then elevation.  For example, the following snippet defines a `Location` located at 42.903 degrees South, 147.327 degrees East, and 25 metres above mean sea level:      {       \"id\": \"NewLocation\",       \"organisationid\": \"MyOrg\",       \"geoJson\": {         \"type\": \"Point\",         \"coordinates\": [147.327, -42.903, 25.0]       }     }  If elevation is unknown, pass only two values (the longitude and latitude) in the `coordinates` property.
 
 try: 
     # Create a new or update an existing Location
@@ -1572,28 +1572,28 @@ Delete observations from a stream
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 streamid = 'streamid_example' # str | 
 
 try: 
@@ -1635,28 +1635,28 @@ Get a collection of observations
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 streamid = 'streamid_example' # str | Stream identifier or a comma separated list of stream identifiers
 start = 'start_example' # str | Start date (url encoded iso8601 format) (optional)
 end = 'end_example' # str | End date (url encoded iso8601 format) (optional)
@@ -1714,30 +1714,30 @@ Upload observations for a stream
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 streamid = 'streamid_example' # str | 
-body = swagger_client.ObservationsPost() # ObservationsPost | 
+body = sensor_cloud.ObservationsPost() # ObservationsPost | 
 
 try: 
     # Upload observations for a stream
@@ -1779,28 +1779,28 @@ This operations returns a list of all organisations.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 
 try: 
     # Get a collection of organisations.
@@ -1839,28 +1839,28 @@ Get details about a specific organisation
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 organisationid = 'organisationid_example' # str | Specify the orgnisation identifier
 
 try: 
@@ -1903,30 +1903,30 @@ Add a new organisation. Only an administrator can create a new organisation.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 organisationid = 'organisationid_example' # str | 
-body = swagger_client.OrganisationPost() # OrganisationPost | This must match the organisationid parameter in the path
+body = sensor_cloud.OrganisationPost() # OrganisationPost | This must match the organisationid parameter in the path
 
 try: 
     # Update or create a new organisation.
@@ -1967,28 +1967,28 @@ Get a collection of platforms.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | Only return platforms with this id or partial match using wildcards (*, ?).   * matches zero or more characters. * ? matches exactly one character.  For example, bo* will match any word starting with bo, such as bo, bom, body, and so on. On the other hand, bo? will only match three-letter words starting with bo, such as bo, bom, and so on. (optional)
 name = 'name_example' # str | Only return platforms with this name or partial match using wildcards (*, ?).   * matches zero or more characters. * ? matches exactly one character.  For example, bo* will match any word starting with bo, such as bo, bom, body, and so on. On the other hand, bo? will only match three-letter words starting with bo, such as bo, bom, and so on. (optional)
 limit = 3.4 # float | Maximum number of streams to return (optional)
@@ -2049,28 +2049,28 @@ Delete an existing Platform. The client must have an appropriate delete Platform
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
 cascade = true # bool | Remove Platform even when is referenced by other objects (eg. SensorDeployments). (optional)
 
@@ -2112,28 +2112,28 @@ Get details about a platform.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | Platform id
 recursive = true # bool | Return full details of embedded resources (optional)
 
@@ -2177,30 +2177,30 @@ Create a new platform. If a platform with the posted 'id' already exists then it
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
-body = swagger_client.PlatformPost() # PlatformPost | 
+body = sensor_cloud.PlatformPost() # PlatformPost | 
 
 try: 
     # Create a new or update an existing platform.
@@ -2240,28 +2240,28 @@ Get a collection of sensing procedures.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 limit = 3.4 # float | Maximum number of sensing procedures to return (optional)
 skip = 3.4 # float | Skip this many results. (optional)
 organisationid = 'organisationid_example' # str | filter response by this organisation id (optional)
@@ -2316,28 +2316,28 @@ Delete an existing sensing procedure. The client must have an appropriate delete
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
 cascade = true # bool | Remove sensing procedure even when is referenced by other objects (eg. Streams). (optional)
 
@@ -2379,28 +2379,28 @@ Get details about a sensing procedures.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | sensing procedure id
 recursive = true # bool | Return full details of embedded resources (optional)
 
@@ -2444,30 +2444,30 @@ Create a new sensing procedure. If a sensing procedure with the posted 'id' alre
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
-body = swagger_client.SensingProcedurePost() # SensingProcedurePost | 
+body = sensor_cloud.SensingProcedurePost() # SensingProcedurePost | 
 
 try: 
     # Create a new or update an existing sensing procedure.
@@ -2509,28 +2509,28 @@ This operation returns a list of all roles or all roles in the authorised organi
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 expand = true # bool | Return full details of roles (optional)
 recursive = true # bool | Return full details of related objects (optional)
 
@@ -2575,28 +2575,28 @@ Delete an existing role. The client must have a delete role permission.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 roleid = 'roleid_example' # str | 
 
 try: 
@@ -2638,28 +2638,28 @@ Get role details
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 roleid = 'roleid_example' # str | Specify the role identifier
 recursive = true # bool | Return full details of related objects (optional)
 
@@ -2704,30 +2704,30 @@ Add or update a Role. The User will need to have admin level Roles for creating 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 roleid = 'roleid_example' # str | 
-body = swagger_client.RolePost() # RolePost | This must match the roleid parameter in the path
+body = sensor_cloud.RolePost() # RolePost | This must match the roleid parameter in the path
 
 try: 
     # Update or create a role.
@@ -2770,28 +2770,28 @@ The root resource of the sensor data API. Provides links to other resources and 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 
 try: 
     # Sensor Data API Root
@@ -2827,28 +2827,28 @@ Get a count of current shares.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 limit = 3.4 # float | Maximum number of shares to return (optional)
 skip = 3.4 # float | Skip this many results. (optional)
 organisationid = 'organisationid_example' # str | filter response by this organisation id (optional)
@@ -2901,28 +2901,28 @@ Get a list of current shares.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 limit = 3.4 # float | Maximum number of shares to return (optional)
 skip = 3.4 # float | Skip this many results. (optional)
 organisationid = 'organisationid_example' # str | filter response by this organisation id (optional)
@@ -2977,28 +2977,28 @@ Delete an existing Share. The client must have an appropriate delete Share permi
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
 
 try: 
@@ -3038,28 +3038,28 @@ Get details about a share.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | Share id
 recursive = true # bool | Return full details of embedded resources (optional)
 
@@ -3103,30 +3103,30 @@ Update an existing Share. The existing object will be overwritten.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
-body = swagger_client.SharePut() # SharePut | 
+body = sensor_cloud.SharePut() # SharePut | 
 
 try: 
     # Update an existing Share.
@@ -3168,29 +3168,29 @@ Create a new share. Do not provide the id property in the body. The server will 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-body = swagger_client.SharePost() # SharePost | 
+api_instance = sensor_cloud.DefaultApi()
+body = sensor_cloud.SharePost() # SharePost | 
 
 try: 
     # Create a new share.
@@ -3229,28 +3229,28 @@ Count a collection of streams.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | Only return streams with this id or partial match using wildcards (*, ?).   * matches zero or more characters. * ? matches exactly one character.  For example, bo* will match any word starting with bo, such as bo, bom, body, and so on. On the other hand, bo? will only match three-letter words starting with bo, such as bo, bom, and so on. (optional)
 limit = 3.4 # float | Maximum number of streams to return (optional)
 skip = 3.4 # float | Skip this many results. (optional)
@@ -3317,28 +3317,28 @@ Get a collection of streams.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | Only return streams with this id or partial match using wildcards (*, ?).   * matches zero or more characters. * ? matches exactly one character.  For example, bo* will match any word starting with bo, such as bo, bom, body, and so on. On the other hand, bo? will only match three-letter words starting with bo, such as bo, bom, and so on. (optional)
 limit = 3.4 # float | Maximum number of streams to return (optional)
 skip = 3.4 # float | Skip this many results. (optional)
@@ -3407,28 +3407,28 @@ Delete an existing stream. The client must have an appropriate delete stream per
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
 
 try: 
@@ -3468,28 +3468,28 @@ Get details about a stream.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
 recursive = true # bool | Return full details of embedded resources (optional)
 
@@ -3534,30 +3534,30 @@ Create a new Stream. If a stream with the posted 'id' already exists then it wil
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | 
-body = swagger_client.StreamPost() # StreamPost | 
+body = sensor_cloud.StreamPost() # StreamPost | 
 
 try: 
     # Create a new or update an existing Stream.
@@ -3599,28 +3599,28 @@ This request will return a collection of all users known to the Sensor Data API.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 expand = true # bool | Return full details of users (optional)
 recursive = true # bool | Return full details of roles (optional)
 roleids = 'roleids_example' # str | A commona separated list of roleids to filter the returned roles. (optional)
@@ -3667,28 +3667,28 @@ Returns a User object for the specified user. You must either be authenticated a
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 userid = 'userid_example' # str | Specify a user id (email address)
 recursive = true # bool | Return full details of linked objects (optional)
 
@@ -3731,30 +3731,30 @@ Update or create a user.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 userid = 'userid_example' # str | Specify a user id (email address)
-body = swagger_client.UserPost() # UserPost | This must match the userid parameter in the path
+body = sensor_cloud.UserPost() # UserPost | This must match the userid parameter in the path
 
 try: 
     # Update or create a user.
@@ -3797,28 +3797,28 @@ This operation will query linked registers. A query and type parameter must be p
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 query = 'query_example' # str | Keywords to search. '*' wild cards are permitted.
 type = 'type_example' # str | Uri of concept type. Typically will be http://qudt.org/schema/qudt#Unit for units of measure and http://qudt.org/schema/qudt#QuantityKind for observed properties. Don't forget to URL encode the parameters.
 
@@ -3863,28 +3863,28 @@ This operation will resolve a URI and return a JSON-LD document. Vocabulary term
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import sensor_cloud
+from sensor_cloud.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: headerkey
-swagger_client.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-apiKey'] = 'Bearer'
 # Configure API key authorization: kongheader
-swagger_client.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['X-Consumer-Custom-ID'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['X-Consumer-Custom-ID'] = 'Bearer'
 # Configure HTTP basic authorization: normal
-swagger_client.configuration.username = 'YOUR_USERNAME'
-swagger_client.configuration.password = 'YOUR_PASSWORD'
+sensor_cloud.configuration.username = 'YOUR_USERNAME'
+sensor_cloud.configuration.password = 'YOUR_PASSWORD'
 # Configure API key authorization: querykey
-swagger_client.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
+sensor_cloud.configuration.api_key['apiKey'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# swagger_client.configuration.api_key_prefix['apiKey'] = 'Bearer'
+# sensor_cloud.configuration.api_key_prefix['apiKey'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.DefaultApi()
+api_instance = sensor_cloud.DefaultApi()
 id = 'id_example' # str | URI of vocabulary term to resolve.
 
 try: 
